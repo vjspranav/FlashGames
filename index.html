@@ -18,12 +18,21 @@
         <a class="navbar-brand">Flash Games</a>
         <form class="d-flex" role="search">
           <input
+            id="search-input"
             class="form-control me-2"
             type="search"
             placeholder="Search"
             aria-label="Search"
           />
-          <button class="btn btn-outline-success" type="submit">Search</button>
+          <!-- don't do anython on click -->
+          <button
+            id="search-button"
+            class="btn btn-outline-success"
+            type="submit"
+            onclick="return false"
+          >
+            Search
+          </button>
           <!-- Add a icon switch for changing theme -->
           <button
             id="themeswitch"

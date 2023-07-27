@@ -40,6 +40,11 @@ html[data-bs-theme="dark"] {
   }
 }
 
+.text-center {
+  text-align: center;
+  align-items: center;
+}
+
 .list-group-item {
   cursor: pointer;
   padding: 10px;

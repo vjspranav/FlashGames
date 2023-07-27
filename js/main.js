@@ -1,3 +1,15 @@
+"use strict";
+
+// add search button click event
+document.getElementById("search-button").addEventListener("click", () => {
+  const query = document.getElementById("search-input").value;
+  if (query === "") {
+    return;
+  }
+  // open search page with query as query parameter
+  window.location.href = `search.html?query=${query}`;
+});
+
 document.addEventListener("DOMContentLoaded", () => {
   const container = document.getElementById("container");
   const gamesPerPage = 10; // Number of games to display per page
@@ -70,9 +82,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       // Attach click event to file buttons
       const fileButtons = document.querySelectorAll(".list-group-item");
-      console.log(fileButtons);
       fileButtons.forEach((button) => {
-        console.log(button);
         button.addEventListener("click", handleFileButtonClick);
       });
     } catch (error) {
