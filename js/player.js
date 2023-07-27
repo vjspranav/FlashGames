@@ -4,5 +4,5 @@ window.addEventListener("load", (event) => {
   const player = ruffle.createPlayer();
   const container = document.getElementById("container");
   container.appendChild(player);
-  player.load("../games/Super Mario Flash.swf");
+  player.load("../games/Worm-Food.swf");
 });
